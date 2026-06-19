@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird HARDCORE</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #1e293b; /* Màu nền tối bên ngoài để làm nổi bật game */
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            height: 100vh; /* Căn giữa theo chiều dọc màn hình */
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            background-color: blue; /* Màu trời xanh dịu khớp với code JS */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Tạo bóng cho khung game đẹp hơn */
+            border: 4px solid #0f172a;
+            border-radius: 8px;
+            max-height: 95vh; /* Giới hạn chiều cao để không bị tràn màn hình */
+            max-width: 100vw;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="gameCanvas" width="1000" height="750"></canvas>
+
+    <script src="./flappybird.js"></script>
+</body>
+</html>
